@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.3')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation "dev.langchain4j:langchain4j:1.0.0"
+    implementation "dev.langchain4j:langchain4j-open-ai:1.0.0"
+    implementation "dev.langchain4j:langchain4j-google-ai-gemini:1.0.0-beta5"
+    implementation "dev.langchain4j:langchain4j-anthropic:1.0.0-beta5"
+    implementation "dev.langchain4j:langchain4j-mistral-ai:1.0.0-beta5"
+
+    implementation 'org.slf4j:slf4j-nop:2.0.7'
+
+    implementation 'javax.visrec:visrec-api:1.0.5'
+    implementation 'javax.visrec:visrec-ri:1.0.3'
+}
+
+test {
+    useJUnitPlatform()
+}
