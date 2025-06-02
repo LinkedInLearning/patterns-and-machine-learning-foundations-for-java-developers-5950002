@@ -14,17 +14,16 @@ import java.util.Enumeration;
 import java.util.Map;
 import java.util.Properties;
 
-public class Identify {
+public class IdentifyApp {
     private static String configFile = "training_data/id.properties";
 
     public static void main(String[] args) throws ModelCreationException, IOException {
 
-        Properties prop = Identify.getConfigProperties();
+        Properties prop = IdentifyApp.getConfigProperties();
         String imagesDir = prop.getProperty("id.imagesDir", "training_data/Mushrooms");
         String modelFile = imagesDir + "/" + prop.getProperty("id.modelFile", "mushroom-model.dnet");
         System.out.println("imagesDir: " + imagesDir);
         System.out.println("modelFile: " + modelFile);
-
 
         var cl = NeuralNetImageClassifier.builder()
                 .inputClass(BufferedImage.class)
@@ -39,10 +38,9 @@ public class Identify {
         try {
             System.out.println(classifyImage(cl, imagesDir + "/" + "chi-1.jpg"));       // dog
             System.out.println(classifyImage(cl, imagesDir + "/" + "chi-2.jpg"));       // dog
-            System.out.println(classifyImage(cl, imagesDir + "/" + "polly.jpg"));       // dog
-            System.out.println(classifyImage(cl, imagesDir + "/" + "polly2.jpg"));      // dog
-            System.out.println(classifyImage(cl, imagesDir + "/" + "mush.jpg"));        // mushroom
-            System.out.println(classifyImage(cl, imagesDir + "/" + "mushroom-old.jpg"));    // mushroom
+            System.out.println(classifyImage(cl, imagesDir + "/" + "chi-3.jpg"));       // dog
+            System.out.println(classifyImage(cl, imagesDir + "/" + "pizza.jpg"));      // dog
+            System.out.println(classifyImage(cl, imagesDir + "/" + "cow.jpg"));        // mushroom
         } catch (IOException iox) {
             System.err.println("*** IOException.  Check filenames for existence or access. [" + iox.getMessage() + "]");
         }
