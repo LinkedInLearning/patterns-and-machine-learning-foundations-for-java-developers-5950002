@@ -25,12 +25,13 @@ and put the images into the ./training_data/DogImages2/train/000.Chihuahua folde
 
 The folder structure should look like:
 
+<pre>
 ../training_data/
   DogImages2/
     train/
       000.Chihuahua/   <----- Chihuahua dog image files go here
       000.Negative/    <----- Non-Chihuahua images files go here [ie, any object other than chihuahuas, eg, flowers, cars, pizza, et al]
-
+</pre>
 
 
 ## Instructor
