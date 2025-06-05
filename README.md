@@ -1,6 +1,5 @@
 # Foundations of AI and Machine Learning Foundations for Java Developers
-This is the repository for the LinkedIn Learning course `Foundations of AI and Machine Learning for Java Developers`. The full course is available from [LinkedIn Learning][https://www.linkedin.com/learning/foundations-of-ai-and-machine-learning-for-java-developers/design-patterns].
-
+This is the repository for the LinkedIn Learning course `Foundations of AI and Machine Learning for Java Developers`. The full course is available from [LinkedIn Learning][lil-course-url].
 ![lil-thumbnail-url]
 
 ## Course Description
@@ -41,3 +40,6 @@ Frank Greco
 Senior Technology Consultant, AI/ML Strategist, Developer
 
 Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/frank-greco?u=104).
+
+[lil-course-url]:https://www.linkedin.com/learning/foundations-of-ai-and-machine-learning-for-java-developers
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG4_wWQqaMfTg/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1731632828110?e=2147483647&v=beta&t=2tes5miRmfXWBVQignSMp-lbsZGfECTRHZTKBZoQNxo
