@@ -21,17 +21,17 @@ Due to image licensing restrictions, we cannot include the dog images that we us
 Here are the steps for you to download/install the images.
 
 Copy the [Chihuahua images](http://vision.stanford.edu/aditya86/ImageNetDogs/n02085620.html) from the Stanford Dogs Dataset
-and put the images into the ./training_data/DogImages2/train/000.Chihuahua folder.  In the 000.Negative folder, you can put approximately the same number of non-Chihuahua images.  The Kaggle Computer Vision datasets are useful, for example [Food](https://www.kaggle.com/datasets?search=food&tags=13207-Computer+Vision) or [Cars](https://www.kaggle.com/datasets?search=cars&tags=13207-Computer+Vision).  You should make sure the training data is non-biased by having a similar number of images.
+and put the images into the ./training_data/DogImages2/train/000.Chihuahua folder.  In the sibling 000.Negative folder, you can put approximately the same number of non-Chihuahua images.  The Kaggle Computer Vision datasets are useful, for example [Food](https://www.kaggle.com/datasets?search=food&tags=13207-Computer+Vision) or [Cars](https://www.kaggle.com/datasets?search=cars&tags=13207-Computer+Vision).  You should make sure the training data is non-biased by having a similar number of images.
 
 The folder structure should look like:
 
-<pre>
+```
 ../training_data/
   DogImages2/
     train/
       000.Chihuahua/   <----- Chihuahua dog image files go here
       000.Negative/    <----- Non-Chihuahua images files go here [ie, any object other than chihuahuas, eg, flowers, cars, pizza, et al]
-</pre>
+```
 
 
 ## Instructor
